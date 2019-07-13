@@ -6,7 +6,7 @@ namespace GradeBook.Test
     public class BookTest
     {
         [Fact]
-        public void Test1()
+        public void BookCalculatesStats()
         {
             // arrange
             var book = new Book("");
