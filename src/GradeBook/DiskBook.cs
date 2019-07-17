@@ -18,10 +18,11 @@ namespace GradeBook
                 using (var writer = File.AppendText($"{Name}.txt"))
                 {
                     writer.WriteLine(grade);
-                    if (GradeAdded != null)
-                    {
-                        GradeAdded(this, new EventArgs());
-                    }
+                    //if (GradeAdded != null)
+                    //{
+                    //    GradeAdded(this, new EventArgs());
+                    //}
+                    GradeAdded?.Invoke(this, new EventArgs());
                 }
             }
             else

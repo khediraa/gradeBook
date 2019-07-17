@@ -44,10 +44,11 @@ namespace GradeBook
             if (grade <= 100 && grade >= 0)
             {
                 grades.Add(grade);
-                if (GradeAdded != null)
-                {
-                    GradeAdded(this, new EventArgs());
-                }
+                //if (GradeAdded != null)
+                //{
+                //    GradeAdded(this, new EventArgs());
+                //}
+                GradeAdded?.Invoke(this, new EventArgs());
             }
             else
             {
